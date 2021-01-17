@@ -1,0 +1,989 @@
+@media only screen and (min-device-width : 320px)  and (-webkit-min-device-pixel-ratio: 1.5){ 
+    #search-container {
+        #logo {
+            background: url(../images/logo@2x.png) no-repeat 0 0 !important;
+            background-size: 246px 142px !important;
+        }
+    }
+}
+
+//------------------------------------//
+//   HOME SCREEN
+//------------------------------------//
+
+#splash {
+    display: none;
+}
+#search-container {
+    position: relative;
+    // overflow: hidden;
+    left: 0; top: 0;
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+    background: #ffc600;
+    z-index: 9999;
+    #log-in {
+        position: absolute;
+        bottom: 70px; left: 50%;
+        margin-left: -67px;
+        height: 50px; width: 135px;
+        @include border-radius(6px);
+        border-bottom: 1px solid #ffd236;
+        text-decoration: none;
+        .login {
+            float: left;
+            padding: 13px 0 0 19px;
+            width: 79px;
+            height: 35px;
+            border-left: 1px solid #d4aa16;
+            border-top: 1px solid #d4aa16;
+            border-bottom: 1px solid #d4aa16;
+            @include border-radius(6px 0 0 6px);
+            font-family: 'Raleway';
+            font-weight: 300;
+            color: #d4aa16;
+            font-size: 22px;
+            -webkit-transition: color 0.3s ease-in-out;
+            -moz-transition: color 0.3s ease-in-out;
+            -o-transition: color 0.3s ease-in-out;
+            transition: color 0.3s ease-in-out;
+            strong {
+                font-family: inherit;
+                font-weight: 700;
+            }
+        }
+        .login-icon {
+            float: right;
+            width: 34px;
+            height: 48px;
+            border: 1px solid #d4aa16;
+            @include border-radius(0 6px 6px 0);
+            position: relative;
+            span {
+                float: left;
+                margin: 16px 0 0 10px;
+                width: 15px;
+                height: 16px;
+                background: url(../images/login-icon.png) no-repeat 0 0;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 16px; left: 10px; bottom: 0; right: 0;
+                    background: url(../images/login-icon-hover.png) no-repeat 0 0;
+                    opacity: 0;
+                    -webkit-transition: opacity 0.3s ease-in-out;
+                    -moz-transition: opacity 0.3s ease-in-out;
+                    -o-transition: opacity 0.3s ease-in-out;
+                    transition: opacity 0.3s ease-in-out;
+                }
+            }
+        }
+        &:hover {
+            .login {
+                color: #7e6717;
+            }
+            .login-icon span:after {
+                opacity: 1;
+            }
+        }
+    }
+    #your-profile {
+        position: absolute;
+        bottom: 140px; left: 50%;
+        margin-left: -93px;
+        height: 50px; width: 185px;
+        @include border-radius(6px);
+        border-bottom: 1px solid #ffd236;
+        text-decoration: none;
+        .login {
+            float: left;
+            padding: 13px 0 0 19px;
+            width: 129px;
+            height: 35px;
+            border-left: 1px solid #d4aa16;
+            border-top: 1px solid #d4aa16;
+            border-bottom: 1px solid #d4aa16;
+            @include border-radius(6px 0 0 6px);
+            font-family: 'Raleway';
+            font-weight: 300;
+            color: #d4aa16;
+            font-size: 22px;
+            -webkit-transition: color 0.3s ease-in-out;
+            -moz-transition: color 0.3s ease-in-out;
+            -o-transition: color 0.3s ease-in-out;
+            transition: color 0.3s ease-in-out;
+            strong {
+                font-family: inherit;
+                font-weight: 700;
+            }
+        }
+        .login-icon {
+            float: right;
+            width: 34px;
+            height: 48px;
+            border: 1px solid #d4aa16;
+            @include border-radius(0 6px 6px 0);
+            position: relative;
+            span {
+                float: left;
+                margin: 16px 0 0 10px;
+                width: 15px;
+                height: 16px;
+                background: url(../images/login-icon.png) no-repeat 0 0;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 16px; left: 10px; bottom: 0; right: 0;
+                    background: url(../images/login-icon-hover.png) no-repeat 0 0;
+                    opacity: 0;
+                    -webkit-transition: opacity 0.3s ease-in-out;
+                    -moz-transition: opacity 0.3s ease-in-out;
+                    -o-transition: opacity 0.3s ease-in-out;
+                    transition: opacity 0.3s ease-in-out;
+                }
+            }
+        }
+        &:hover {
+            .login {
+                color: #7e6717;
+            }
+            .login-icon span:after {
+                opacity: 1;
+            }
+        }
+    }
+    #addevent-btn-index {
+        position: absolute;
+        bottom: 70px; left: 50%;
+        margin-left: -93px;
+        height: 50px; width: 185px;
+        @include border-radius(6px);
+        border-bottom: 1px solid #ffd236;
+        text-decoration: none;
+        .login {
+            float: left;
+            padding: 13px 0 0 19px;
+            width: 129px;
+            height: 35px;
+            border-left: 1px solid #d4aa16;
+            border-top: 1px solid #d4aa16;
+            border-bottom: 1px solid #d4aa16;
+            @include border-radius(6px 0 0 6px);
+            font-family: 'Raleway';
+            font-weight: 300;
+            color: #d4aa16;
+            font-size: 22px;
+            -webkit-transition: color 0.3s ease-in-out;
+            -moz-transition: color 0.3s ease-in-out;
+            -o-transition: color 0.3s ease-in-out;
+            transition: color 0.3s ease-in-out;
+            strong {
+                font-family: inherit;
+                font-weight: 700;
+            }
+        }
+        .login-icon {
+            float: right;
+            width: 28px;
+            height: 48px;
+            border: 1px solid #d4aa16;
+            @include border-radius(0 6px 6px 0);
+            position: relative;
+            font: {
+                family: "Raleway", sans-serif;
+                size: 50px;
+                weight: 700;
+            }
+            color: #d4aa16;
+            padding-left: 6px;
+            -webkit-transition: color 0.3s ease-in-out;
+            -moz-transition: color 0.3s ease-in-out;
+            -o-transition: color 0.3s ease-in-out;
+            transition: color 0.3s ease-in-out;
+            span {
+                float: left;
+                margin: 16px 0 0 10px;
+                width: 15px;
+                height: 16px;
+                background: url(../images/login-icon.png) no-repeat 0 0;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 16px; left: 10px; bottom: 0; right: 0;
+                    background: url(../images/login-icon-hover.png) no-repeat 0 0;
+                    opacity: 0;
+                    -webkit-transition: opacity 0.3s ease-in-out;
+                    -moz-transition: opacity 0.3s ease-in-out;
+                    -o-transition: opacity 0.3s ease-in-out;
+                    transition: opacity 0.3s ease-in-out;
+                }
+            }
+        }
+        &:hover {
+            .login {
+                color: #7e6717;
+            }
+            .login-icon {
+                color: #7e6717;
+            }
+        }
+    }
+    #logo {
+        display: block;
+        width: 246px;
+        height: 142px;
+        background: url(../images/logo.png) no-repeat 0 center;
+        margin: 0 auto 22px;
+        padding-top: 22px;
+    }
+
+    #about-yt {
+        position: absolute;
+        left: 50%;
+        bottom: 30px;
+        margin-left: -60px;
+        font-family: 'Raleway';
+        font-weight: 400;
+        color: #d4aa16;
+        font-size: 16px;
+        text-decoration: underline;
+        z-index: 9;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (min-width : $breakpoint) { 
+
+    #splash {
+        position: relative;
+        overflow: hidden;
+        left: 0; top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/background.jpg) no-repeat center center;
+        display: block;
+        z-index: 9999;
+
+        #logo-desktop {
+            position: absolute;
+            left: 50%; top: 50%;
+            width: 485px;
+            height: 246px;
+            background: url(../images/logo-desktop.png) no-repeat 0 0;
+            margin: -123px 0 0 -243px; 
+        }
+
+
+        
+        #arrow {
+            position: absolute;
+            left: 50%; bottom: 40px;
+            margin-left: -80px;
+            width: 160px;
+            height: 57px;
+            background: url(../images/arrow.png) no-repeat 0 0;
+            cursor: pointer;
+            -webkit-animation:bounce 0.6s ease-in-out infinite;
+            -moz-animation:bounce 0.6s ease-in-out infinite;
+            -o-animation:bounce 0.6s ease-in-out infinite;
+            animation:bounce 0.6s ease-in-out infinite;
+        }
+    }
+    #search-container {
+        position: relative;
+        overflow: hidden;
+        left: 0; top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        #log-in {
+            position: absolute;
+            top: 20px; right: 20px; left: auto;
+            margin: 0;
+        }
+        #logo {
+            display: none;
+        }
+    }
+
+    #your-profile {
+        position: absolute;
+        top: auto !important; left: auto !important;
+        top: 20px !important; right: 220px !important;
+        // margin-left: -67px;
+        height: 50px; width: 185px;
+        @include border-radius(6px);
+        border-bottom: 1px solid #ffd236;
+        text-decoration: none;
+    }
+    #addevent-btn-index {
+        position: absolute;
+        bottom: auto !important; left: auto !important;
+        top: 20px !important; right: 20px !important;
+        // margin-left: -67px;
+        height: 50px; width: 185px;
+        @include border-radius(6px);
+        border-bottom: 1px solid #ffd236;
+        text-decoration: none;
+    }
+}
+
+//------------------------------------//
+//   LOGIN AREA
+//------------------------------------//
+
+#login-wrapper {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    background-color: #e6faf5;
+    @extend .box-sizing;
+    padding: 10px 19px;
+    z-index: 99999;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: none;
+    // overflow: hidden;
+    .calendar {
+        float: left;
+        height: 37px;
+        width: 37px;
+        background: url(../images/calendar.png) no-repeat 0 0;
+    }
+    .close {
+        float: right;
+        height: 37px;
+        width: 37px;
+        background: url(../images/close_icon.png) no-repeat 11px 11px;
+        border: 1px solid #9de1ca;
+        @include border-radius(5px);
+    }
+    #login-body {
+        float: left;
+        width: 100%;
+        margin-top: 30px;
+
+        .tabs-nav {
+            float: left;
+            width: 100%;
+            .tabs {
+                li {
+                    float: left;
+                    display: inline;
+                    margin-right: 28px;
+                    a {
+                        display: inline;
+                        font-size: 30px;
+                        color: #2fb487;
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: 700;
+                        color: #9ae1c9;
+                        text-decoration: none;
+                    }
+                    &.active {
+                        a {
+                            color: #2fb487;
+                            text-decoration: none;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        // Defautowe wartości dla "Loguj" & "Rejestruj"
+        .login-area, .register-area {
+            input {
+                border: 0;
+                width: 100%;
+                height: 60px;
+                background: transparent;
+                border-left: 1px solid #c0ddd3;
+                border-right: 1px solid #c0ddd3;
+                border-bottom: 1px solid #c0ddd3;
+                font-size: 18px;
+                font-family: 'Raleway';
+                font-weight: 600;
+                color: #638378;
+                @extend .box-sizing;
+                padding: 0 19px;
+                &::-webkit-input-placeholder { color:#638378; }
+                &::-moz-placeholder { color:#638378; }
+                &:-ms-input-placeholder { color:#638378; }
+                &.username, &.email {
+                    border-top: 1px solid #c0ddd3;
+                    @include border-top-radius(5px);
+                }
+                &.password {
+                    @include border-bottom-radius(5px);
+                }
+                
+            }
+            button {
+                float: left;
+                width: 100%;
+                height: 60px;
+                font-family: 'Raleway';
+                font-size: 22px;
+                font-weight: 700;
+                border: 0;
+                color: #ffffff;
+                @include border-radius(5px);
+            }
+        }
+
+        .login-area {
+            float: left;
+            width: 100%;
+            margin-top: 16px;
+            max-height: 295px;
+            position: relative;
+            padding-bottom: 45px;
+            button {
+                &.via-page {
+                    margin-top: 10px;
+                    background: #2f98e2;
+                }
+                &.via-fb {
+                    background: #3b579c;
+                    span {
+                        font-weight: 300;
+                    }
+                }
+            }
+            .separator-or {
+                float: left;
+                width: 100%;
+                height: 10px;
+                margin: 16px 0;
+                // background: red;
+                position: relative;
+                .or {
+                    position: relative;
+                    width: 32px;
+                    height: 9px;
+                    padding-top: 1px;
+                    text-align: center;
+                    margin: 0 auto;
+                    background: #e6faf5;
+                    font-size: 9px;
+                    color: #bfddd3;
+                    font-family: 'RalewayBold';
+                    z-index: 99;
+                }
+                .separator {
+                    position: absolute;
+                    left: 0; top: 5px;
+                    width: 100%;
+                    height: 1px;
+                    background: #bfddd3;
+                    z-index: 1;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        left: 0; top: -1px;
+                        height: 1px;
+                        width: 100%;
+                        background: #f4fffc;
+                    }
+                }
+            }
+            .forget-pw {
+                position: absolute;
+                bottom: 10px; left: 0;
+                width: 100%;
+                text-align: center;
+                font-family: 'RalewayLight';
+                font-size: 13px;
+                color: #b0c5c0;
+            }
+        }
+        .register-area {
+            float: left;
+            width: 100%;
+            margin-top: 16px;
+            max-height: 295px;
+            position: relative;
+            padding-bottom: 45px;
+
+            input[type='checkbox'] {
+                display: none;
+            }
+
+            input[type='checkbox'] + label {
+                float: left;
+                font: {
+                    family: 'Raleway', sans-serif;
+                    size: 13px;
+                    weight: 400;
+                }
+                color: #7c9aa7;
+                margin: 20px 0 0 0;
+                padding: 2px 0 8px 36px;
+                line-height: 24px;
+                cursor: pointer;
+                background: url(../images/checkbox_custom.png) left top no-repeat;
+            }
+
+            input[type='checkbox']:checked + label {
+                background-image: url(../images/checkbox_custom_check_login.png);
+            }
+
+            button {
+                -webkit-transition: background 0.3s ease-in-out;
+                -moz-transition: background 0.3s ease-in-out;
+                -o-transition: background 0.3s ease-in-out;
+                transition: background 0.3s ease-in-out;
+                &.reg-in {
+                    margin-top: 13px;
+                    background: #b9e1d3;
+                }
+                &.active {
+                    background: #3ec094 !important;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : $breakpoint) {
+    #login-wrapper {
+        position: fixed;
+        left: 0; top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #2fe2a5;
+        padding: 10px 19px;
+        .calendar {
+            float: none;
+            height: 130px;
+            width: 129px;
+            background: url(../images/calendar-big.png) no-repeat 0 0;
+            margin: 59px auto 49px;
+            display: block;
+        }
+        .close {
+            float: none;
+            position: absolute;
+            right: 20px; top: 20px;
+            height: 50px;
+            width: 35px;
+            background: url(../images/close_login_desktop.png) no-repeat 10px 18px;
+            border: 1px solid #2fc491;
+            @include border-radius(6px);
+        }
+        #login-body {
+            float: none;
+            width: 640px;
+            height: 449px;
+            margin: 49px auto 0;
+            .tabs-nav {
+                float: left;
+                width: 100%;
+                height: auto;
+                margin:0;
+                .tabs {
+                    li {
+                        float: left;
+                        display: inline;
+                        width: 320px;
+                        margin: 0;
+                        &.login {
+                           background: #e6faf5;
+                           @include border-radius(5px 0 0 0);
+                        }
+                        &.register {
+                            background: #cdf3e6;
+                            @include border-radius(0 5px 0 0);
+                        }
+
+                        a {
+                            padding: 39px 0 32px;
+                            float: left;
+                            width: 100%;
+                            display: inline;
+                            font-size: 35px;
+                            color: #2fb487;
+                            margin-right: 0;
+                            text-align: center;
+                            font-family: 'Raleway', sans-serif;
+                            font-weight: 700;
+                            text-decoration: none;
+                            cursor: default;
+                            
+                            
+                        }
+                    }
+                }
+                        
+            }
+            .login-area {
+                float: left;
+                width: 282px;
+                padding: 0 19px 20px;
+                margin-top: 0;
+                background: #e6faf5; // Can remove.
+                max-height: 100%;
+                height: 331px;
+                @include border-radius(0 0 0 5px);
+                button {
+                    -webkit-transition: background 0.3s ease-in-out;
+                    -moz-transition: background 0.3s ease-in-out;
+                    -o-transition: background 0.3s ease-in-out;
+                    transition: background 0.3s ease-in-out;
+                    cursor: pointer;
+                    &.via-page:hover {
+                        background: #2f8bcb;
+                    }
+                    &.via-fb:hover {
+                        background: #344b84;
+                    }
+                }
+                .forget-pw {
+                    float: right;
+                    position: relative;
+                    bottom: 0; left: 0;
+                    margin: 10px 0;
+                    width: 100%;
+                    text-align: right;
+                    font-family: 'RalewayLight';
+                    font-size: 13px;
+                    color: #b0c5c0;
+                }
+            }
+            .register-area {
+                float: left;
+                width: 282px;
+                margin-top: 0;
+                position: relative;
+                padding: 0 19px 20px;
+                background: #cdf3e6;
+                max-height: 100%;
+                height: 331px;
+                @include border-radius(0 0 5px 0);
+
+                button {
+                    &.reg-in {
+                        margin-top: 13px;
+                        background: #b9e1d3;
+                    }
+                }
+            }
+        }
+    }
+}
+//------------------------------------//
+//   SEARCH INPUT WRAPPER
+//------------------------------------//
+
+#search-wrapper {
+    padding: 0 10px;
+    #search-content  {
+        margin: 0 auto;
+        width: 100%;
+        height: 74px;
+        @extend .box-sizing;
+        @include border-radius(6px);
+        position: relative;
+        border-bottom: 1px solid #ffd236;
+        #div-1 { 
+            display: none;
+        }
+        #div-2 { 
+            float: left; 
+            display: block;
+            width: 41px; 
+            height: 71px; 
+            border: 1px solid #d4aa16;
+            @include border-radius(6px 0 0 6px);
+            .search_event_button {
+                width: 41px;
+                height: 71px;
+                border: 0;
+                background: url(../images/search_event_icon_mobile.png) no-repeat 11px 26px;
+                text-indent: -9999px;
+                padding: 0;
+            }
+        }
+        #search_event_input { 
+            position: relative;
+            overflow: hidden;
+            height: 71px; 
+            border-top: 1px solid #d4aa16;
+            border-bottom: 1px solid #d4aa16;
+            border-right: 1px solid #d4aa16;
+            @include border-radius(0 6px 6px 0);
+            .search_event_input {
+                float: left;
+                height: 71px;
+                width: 100%;
+                border: 0;
+                background: #ffc600;
+                font-family: 'RalewayBold', sans-serif;
+                color: #7e5e14;
+                font-size: 24px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 0 40px 0 10px;
+
+                &::-webkit-input-placeholder { color:#7e5e14; }
+                &::-moz-placeholder { color:#7e5e14; } /* firefox 19+ */
+                &:-ms-input-placeholder { color:#7e5e14; } /* ie */
+            }
+            .search_event_option {
+                position: absolute;
+                right: 0; top: 0px;
+                width: 50px;
+                height: 71px;
+                background: url(../images/search_event_option_mobile.png) no-repeat 25px 28px;
+                // background: red;
+                // cursor: pointer;
+            }
+        }
+        #settings-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            z-index: 999;
+            @extend .box-sizing;
+            #settings {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding: 20px;
+                @extend .box-sizing;
+                background: #fff9e6;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: 24px; top: -25px;
+                    width: 0px;
+                    height: 0px;
+                    border-style: solid;
+                    border-width: 0 15px 25px 15px;
+                    border-color: transparent transparent #fff9e6 transparent;
+                }
+                .close {
+                    float: right;
+                    height: 37px;
+                    width: 37px;
+                    background: url(../images/close_settings.png) no-repeat 11px 11px;
+                    border: 1px solid #726c59;
+                    @include border-radius(5px);
+                }
+                #settings-options {
+                    float: left;
+                    width: 100%;
+                    li {
+                        float: left;
+                        display: block;
+                        clear: both;
+                        color: #726c59;
+                        font-size: 24px;
+                        font-family: 'Raleway';
+                        font-weight: 300;
+                        margin-bottom: 30px;
+                         input[type='radio'] {
+                            display: none;
+                        }
+
+                        input[type='radio'] + label {
+                            float: left;
+                            line-height: 24px;
+                            min-height: 34px;
+                            padding: 3px 0 3px 51px;
+                            cursor: pointer;
+                            background: url(../images/radio_normal.png) left top no-repeat;
+                        }
+
+                        input[type='radio']:checked + label {
+                            background-image: url(../images/radio_check.png);
+                        }
+                    }
+                }
+            }    
+        }
+    }
+}
+
+@media only screen and (min-width : $breakpoint) { 
+    #search-wrapper {
+        padding: 0 20px;
+        #search-content {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1207px;
+            height: 103px;
+            padding: 0;
+            #div-1 { 
+                float: left;
+                display: block;
+                width: 88px; 
+                height: 100px; 
+                border: 1px solid #d4aa16;
+                @include border-radius(6px 0 0 6px);
+                span {
+                    float: left;
+                    width: 39px;
+                    height: 39px;
+                    margin: 31px 0 0 25px;
+                    background: url(../images/search_event_icon.png) no-repeat 0 0;
+                }
+            }
+            #div-2 { 
+                float: right; 
+                width: 175px; 
+                height: 100px; 
+                border: 1px solid #d4aa16;
+                @include border-radius(0 6px 6px 0);
+                .search_event_button {
+                    width: 175px;
+                    height: 100px;
+                    border: 0;
+                    background: transparent;
+                    font-family: 'RalewayBold';
+                    color: #d4aa16;
+                    font-size: 30px;
+                    line-height: 30px;
+                    cursor: pointer;
+                    transition: color 0.3s linear;
+                    -moz-transition: color 0.3s linear;
+                    -o-transition: color 0.3s linear;
+                    -webkit-transition: color 0.3s linear; 
+                    text-indent: 0;
+                    padding: 0;
+                }
+                .hover {
+                    color: #7e6717;
+                }
+            }
+            #search_event_input { 
+                height: 100px; 
+                border-top: 1px solid #d4aa16;
+                border-bottom: 1px solid #d4aa16;
+                border-right: 0;
+                background: #ffc600;
+                @include border-radius(0);
+                .search_event_input {
+                    height: 100px;
+                    width: 100%;
+                    border: 0;
+                    background: #ffc600;
+                    font-family: 'RalewayBold', sans-serif;
+                    color: #7e5e14;
+                    font-size: 49px;
+                    padding: 0 60px 0 30px;
+                    
+                    &::-webkit-input-placeholder { color:#7e6717; }
+                    &::-moz-placeholder { color:#7e6717; } /* firefox 19+ */
+                    &:-ms-input-placeholder { color:#7e6717; } /* ie */
+                }
+                .search_event_option {
+                    position: absolute;
+                    right: 23px; top: 35px;
+                    width: 31px;
+                    height: 31px;
+                    background: url(../images/search_event_option.png) no-repeat 0 0;
+                    cursor: pointer;
+                }
+            }
+            #settings-wrapper {
+                position: relative;
+                top: 10px;
+                width: 100%;
+                // height: 221px;
+                padding: 0 177px 0 90px;
+                min-height: auto;
+                #settings {
+                    position: relative;
+                    width: 100%;
+                    // height: 221px;
+                    padding: 30px 30px 10px 30px;
+                    background: #fff9e6;
+                    -moz-box-shadow: 0 0 23px 1px rgba(213,169,17,.3); /* outer glow */
+                    -webkit-box-shadow: 0 0 23px 1px rgba(213,169,17,.3); /* outer glow */
+                    box-shadow: 0 0 23px 1px rgba(213,169,17,.3); /* outer glow */
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        right: 24px; top: -25px;
+                        width: 0px;
+                        height: 0px;
+                        border-style: solid;
+                        border-width: 0 15px 25px 15px;
+                        border-color: transparent transparent #fff9e6 transparent;
+                    }
+                    .close {
+                        display: none;
+                    }
+                    #settings-options {
+                        float: left;
+                        width: 100%;
+                        // display: table;
+                        li {
+                            float: left;
+                            clear: none;
+                            display:inline-block;
+                            color: #726c59;
+                            font-size: 24px;
+                            font-family: 'Raleway';
+                            font-weight: 300;
+
+                            // height: 34px;
+                            height: auto !important;
+                            
+                            width: 50%;
+                            max-width: 400px;
+                            // margin-bottom: 30px;
+                            margin-bottom: 10px;
+                            label {
+                                input {
+
+                                }
+                            }
+                            &:nth-child(3) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }    
+            }
+        }
+    }  
+}
+// @media only screen and (min-width : 768px) and (max-width : 1024px) {
+//     #search-wrapper {
+//         padding: 0 20px !important;
+//     }
+// }
+@-webkit-keyframes bounce {
+    0% { padding-top:10px;}
+    50% { padding-top:15px;}
+    100% { padding-top:10px;}
+}
+@-moz-keyframes bounce {
+    0% { padding-top:10px;}
+    50% { padding-top:15px;}
+    100% { padding-top:10px;}
+}
+@-o-keyframes bounce {
+    0% { padding-top:10px;}
+    50% { padding-top:15px;}
+    100% { padding-top:10px;}
+}
+@keyframes bounce {
+    0% { padding-top:10px;}
+    50% { padding-top:15px;}
+    100% { padding-top:10px;}
+}
